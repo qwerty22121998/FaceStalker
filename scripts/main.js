@@ -1,6 +1,6 @@
 jQuery("._2t-a ._50tj").parent().append(
 
-    "<font id='tickcounter' class='counter' align='right'><b>Loading...</b></font><font class='loadmore'>▼</font></font><input class='spyname' type='text' name='spyname' id='spyname' placeholder='Who is your target?'></input>"
+    "<font id='tickcounter' class='counter' align='right'><b>Loading...</b></font><font class='loadmore'>▼<span class='tooltiptext'>Click to load more items.</span></font></font><input class='spyname' type='text' name='spyname' id='spyname' placeholder='Who is your target?'></input>"
 )
 
 var numberOfItem = 0;

@@ -39,3 +39,45 @@
 .loadmore:hover {
     background-color: #1d2129;
 }
+
+.loadmore .tooltiptext {
+    font-weight: bold;
+    visibility: hidden;
+    width: 180px;
+    background-color: #fff;
+    color: #365899;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the loadmoretext */
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 50%;
+    margin-left: -90px;
+    /* Fade in loadmore*/
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+
+/* loadmorearrow */
+
+.loadmore .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+
+/* Show the loadmoretext when you mouse over the loadmorecontainer */
+
+.loadmore:hover .tooltiptext {
+    visibility: visible;
+    opacity: 0.8;
+}
