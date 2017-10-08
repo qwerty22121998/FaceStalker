@@ -1,0 +1,34 @@
+{
+    "manifest_version": 2,
+    "name": "Facebook Stalker",
+    "version": "0.1.0",
+    "description": "Tiny extension that make you keep track on your crush's activities",
+    "author": "Ho Vu - qwerty22121998@gmail.com",
+    "homepage_url": "https://www.facebook.com/khanhvu2212",
+    "icons": {
+        "16": "icons/icon16.png",
+        "128": "icons/icon128.png"
+    },
+    "permissions": [
+        "background"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "https://www.facebook.com/*"
+        ],
+        "run_at": "document_idle",
+        "js": [
+            "scripts/jquery.js",
+            "scripts/main.js"
+        ],
+        "css": [
+            "styles/spy.css"
+        ]
+    }],
+
+
+    "browser_action": {
+        "default_title": "Facebook Stalker",
+        "default_popup": "popup.html"
+    }
+}
