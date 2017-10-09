@@ -2,9 +2,22 @@
     position: absolute;
     right: 0.5%;
     float: right;
-    width: 11%;
-    height: 30px;
     top: 3px;
+    background-color: #fff;
+    border: 1px solid #3b5998;
+    border-radius: 3px;
+    box-sizing: border-box;
+    height: 26px;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-right: 5px;
+    max-width: 448px;
+    overflow: hidden;
+    padding-left: 5px;
+    padding-right: 48px;
+    position: relative;
+    top: 8px;
+    width: auto;
 }
 
 .counter {
